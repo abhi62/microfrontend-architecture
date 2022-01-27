@@ -8,7 +8,7 @@ const mount = (el) => {
     const name = faker.commerce.productName();
     products += `<div>${name}</div>`;
   }
-  console.log(el + 'products');
+  console.log(el, 'product>');
 
   el.innerHTML = products;
 };
@@ -17,7 +17,7 @@ const mount = (el) => {
 //first check if its running in development mode
 
 if (process.env.NODE_ENV === 'development') {
-  const el = document.querySelector('#prod_id-dev');
+  const el = document.querySelector('#dev-products');
 
   //assuming that container doesnt have id prod_id-dev
   if (el) {

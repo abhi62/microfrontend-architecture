@@ -1,6 +1,7 @@
-import { mount as productsMounts } from 'products/ProductsIndex';
-import { mount as cartMounts } from 'cart/CartShow';
+import { mount as productsMount } from 'products/ProductsIndex';
+import { mount as cartMount } from 'cart/CartShow';
+
 console.log('Container!');
 
-productsMounts(document.querySelector('#prod_id'));
-cartMounts(document.querySelector('#my-cart'));
+productsMount(document.querySelector('#my-products'));
+cartMount(document.querySelector('#my-cart'));
